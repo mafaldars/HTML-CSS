@@ -10,11 +10,11 @@ Fale Conosco
 
 História do Mascote do Android
 
-Provavelmente você sabe que o sistema operacional Android, mantido pelo Google é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.
+Provavelmente você sabe que o sistema operacional Android, mantido pelo Google é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que a sua simpática mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robôzinho.
 
 A primeira versão
 
-A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado Dan Morrill. Ele conta que abriu o Inkscape (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.
+A primeira tentativa de criar um mascote surgiu em 2007 e adveio de um desenvolvedor chamado Dan Morrill. Ele conta que abriu o Inkscape (software livre para vetorização de imagens) e criou sua própria versão do robô. O objetivo era apenas personificar o sistema apenas para a a sua equipa, não existia nenhuma solicitação da empresa para a criação de um mascote.
 
 [FOTO]
 
@@ -22,7 +22,7 @@ Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: ser
 
 Surge um novo mascote
 
-A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.
+A ideia de ter uma mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa Irina Blok, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.
 
 [FOTO]
 
@@ -30,7 +30,7 @@ A ideia principal da Irina era representar tudo graficamente com poucos traços 
 
 [FOTO]
 
-A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.
+A principal inspiração para os traços do novo Bugdroid veio daqueles bonequinhos que ilustram portas de WC para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do Google e olhou para o lado dos WC e a identificação foi imediata: simples, limpo, objetivo.
 
 [VIDEO]
  
@@ -58,6 +58,6 @@ Infelizmente, o Android Q não existiu, pois o Google resolveu pôr fim a essa d
 Acesse aqui o site Android History para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.
 [/EXTRA]
 
-Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.
+Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e da sua simpática mascote.
          
-Site criado por Gustavo Guanabara para o CursoemVideo.
+Site replicado por Mafalda Santos do Curso em Video.
