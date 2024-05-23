@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos no HTML5</title>
+</head>
+<body>
+    <h1>Inserir vídeos com hospedagem local</h1>
+    <p>Este vídeo encontra-se hospedado no meu próprio servidor.</p>
+
+    <video src="midia/meu-video.mp4" width="500" controls></video>
+    <p><strong>Nota:</strong> Safari não funciona com o formato OGV.</p>
+    <p>
+        Como fizemos anteriormente com os áudios, o processo será identico para os vídeos com as tags para vídeo.
+        <br>
+        Veja o exemplo a seguir:
+    </p>
+
+    <video width="500" poster="imagens/limoes-capa.png"controls autoplay loop>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.m4v" type="video/m4v">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.ogv" type="video/ogv">
+        <p><a href="midia/meu-video.mp4">Clique aqui para efetuar o download do arquivo MP4.</a></p>
+    </video>
+    <br>
+    <br>
+    Dentro da tag &lt;video&gt; iremos inserir
+        <br>
+        &lt;source src="midia/meu-video.mp4" type="video/mp4"&gt;
+        <br>
+        &lt;source src="midia/meu-video.m4v" type="video/m4v"&gt;
+        <br>
+        &lt;source src="midia/meu-video.webm" type="video/webm"&gt;
+        <br>
+        &lt;source src="midia/meu-video.ogv" type="video/ogv"&gt;
+        <br>
+        &lt;/video&gt;
+
+    <p>
+        <strong>Nota:</strong> Relembramos de que as instruções são lidas de cima para baixo, logo o browser irá tentar reproduzir primeiro o vídeo mp4 (primeiro), depois o vídeo em formato m4v e assim sucessivamente.
+    <br>
+        Caso o browser não consiga reproduzir nenhum dos formatos inseridos, irá apresentar uma mensagem ao user a informar e o link para efetuar o download.
+        <br>
+        <strong>EX do código e da mensagem:</strong>&lt;p&gt;&lt;a href="midia/meu-video.mp4">Clique aqui para efetuar o download do arquivo MP4.&lt;/a&gt;&lt;/p&gt;
+    </p>
+    <strong>Nota:</strong> Temos de ter em atenção o tamanho dos vídeos pois se formos multiplicar o tamanho dos vídeos pelas possíveis visualizações, estamos a falar em muitos MB e até GB, isso custaá muito dinheiro de hospedagem do nosso servidor.
+
+    <h1>Inserir vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/R3pJ2HHFaTo?si=hcQ3_D5lQTAJk03X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p>
+        <Strong>Nota:</Strong> Colocar vídeos do YouTube (ou do Vimeo) mesmo que os users visualiazem vezes sem conta, não consome dados do nosso servidor, consome do servidor do YouTube.
+    <br>
+        Caso o cliente pretenda mesmo ter os vídeos hospedados no próprio servidor, devemos informar de que podemos fazê-lo mas que isso terá custos elevados a cargo do cliente.
+    </p>
+
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        mark {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formatações principais</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>
+        Nesta frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt; (não semântica).
+    </p>
+
+    <p>
+        Nesta frase temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (semântica).
+    </p>
+
+    <h2>Itálico / Ênfase</h2>
+    <p>
+        Nesta frase temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântico).
+    </p>
+
+    <strong>Outra dica:</strong> se selecionarmos o <i>texto que pretendemos colocar em itálico</i>, clicamos <strong>Command + Shift + P</strong> abre barra de pesquisa (acima) do VSCode e clicamos <strong>I + ENTER</strong> , o texto ficará automaticamente inserido na tag &lt;i&gt;.
+
+<br>
+<br>
+
+    <p>
+        Nesta frase temos um <em>termo com ênfase</em> usando a tag &lt;em&gt; (semântica).
+    </p>
+
+    <strong>Outra dica:</strong> se selecionarmos o &lt;p&gt;texto que pretendemos colocar dentro de um parágrafo&lt;p&gt;, clicamos <strong>Command + Shift + P</strong> abre barra de pesquisa (acima) do VSCode e clicamos <strong>P + ENTER</strong>, o texto ficará automaticamente inserido na tag &lt;p&gt;.
+
+    <h2>Texto demarcado</h2>
+    <p>
+        Nesta frase temos um <mark style="background-color: rgb(253, 119, 52);">termo valioso/demarcado</mark> usando a tag &lt;mark&gt;. Demarcar com esta tag é como se estivessemos a demarcar com marcador de uma cor vibrante para realçar a importância do conteúdo.
+    </p>
+
+    <p>
+        Neste parágrafo temos <mark>outro termo demarcado</mark> no final. Não herda a cor do parágrafo anterior (fizemos CSS inline no anterior). Para herdar a mesma cor em ambos os parágrafos basta retirar o CSS inline do parágrafo anterior (temos style no head da página para ambas as tags mark.)
+    </p>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>
+        Estamos a criar um <big>texto grande</big> e um <small>texto pequeno</small> neste parágrafo.
+        <br>
+        A tag &lt;big&gt; está obsoleta apesar de ainda funcionar.
+        <br>
+        A tag &lt;small&gt; está operacional (<strong>ex:</strong> as letras minúsculas dos contratos devem ser lidas devido à sua importância apesar de serem em tamanho pequeno.)
+    </p>
+
+    <h2>Texto delete</h2>
+    <p>
+       Podemos marcar um <del>texto como excluído</del> para indicar que deve ser lido mas não deve ser considerado.
+       <br>
+       A tag &lt;del&gt; é utilizada para este efeito (semântica).
+    </p>
+
+    <h2>Texto inserido</h2>
+    <p>
+        Podemos marcar um <ins>texto como inserido</ins> para dar ênfase (sublinhado) e indicar que foi adicionado.
+        <br>
+        A tag &lt;ins&gt; é utilizada para este efeito (semântica).
+    </p>
+
+    <p>
+        Existe também a tag &lt;u&gt; para <u>sublinhar</u> (não semântica). Poderá ficar obsoleta.
+    </p>
+
+    <h2>Texto sobrescrito</h2>
+    <p>
+        Para inserir coisas do tipo x<sup>20</sup>+3.
+        <br>
+        A tag &lt;sup&gt; é utilizada para este efeito (cima).
+    </p>
+
+    <h2>Texto subscrito</h2>
+    <p>
+        Para inserir coisas do tipo H<sub>2</sub>0.
+        <br>
+        A tag &lt;sub&gt; é utilizada para este efeito (baixo).
+    </p>
+    
+</body>
+</html>

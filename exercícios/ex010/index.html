@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS</title>
+</head>
+<body>
+    <h1>Utilizar links externos</h1>
+    <!-- É um link que irá acessar outro site. EX: um vídeo do youtube. 
+     -->
+    <p>
+        Pode aceder ao meu <a href="https://github.com/mafaldars" target="_blank" rel="external">repositório público no GitHub</a>.
+
+        <br>
+        <br>
+
+        <strong>Nota:</strong> Quando acedemos através de um link externo o user é redirecionado diretamente para outro site, sobrepondo o nosso (comportamento não desejado). Para isso não acontecer devemos colocar os atributos target="_blank" rel="external". 
+        <br>
+        Não colocamos target="_blank" rel="external" quando se trata de um hyperlink para o nosso próprio site. 
+    </p>
+    <p>Resumindo, para podermos controlar onde o site de destino irá abrir, utilizamos o atributo <em>target</em> que suporta os seguintes valores:
+        <br>
+        <strong>_blank</strong> - irá abrir o link numa nova janela (tab) em branco;
+        <br>
+        <strong>_self</strong> - vai abrir o link na janela (tab) atual (padrão);
+        <br>
+        <strong>_top</strong> - vai desfazer todos os frames e abrir o destino no navegador completo;
+        <br>
+        <strong>_parent</strong> - similar ao uso do _top em uma referência à janela mãe nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir.
+        <br>
+        <strong>Nota:</strong> Foquemo-nos apenas em _blank e _self pois o uso de frames é uma técnica quase em desuso.
+    </p>
+        
+    <p>
+        Os <em>hyperlinks</em> são um dos conceitos mais antigos da história da linguagem HTML. Permitem que liguemos um ponto a outro da <em>Wordl Wide Web</em> (sub-rede da Internet).
+        <br>
+        <br>
+        Cada vez que acedemos a um site e clicamos para sermos direcionados para outra page, outro site ou até para fazer download de um arquivo, estamos a interagir com um <em>hyperlink</em>.
+        <br>
+        <br>
+        Os mecanismos de busca utilizam-se de hyperlinks de um site. 
+        <br>
+        <br>
+        O <strong>Google</strong>, por exemplo, para encontrar um determinado site, vasculha constantemente todos os outros sites da Internet em busca de outros links para descobrir novos conteúdos. Por isso é que é tão importante conseguir links válidos de outros sites para o nosso próprio site. 
+        <br>
+        <br>
+        <strong>Nota:</strong> Podemos ver detalhadamente como funcionam os algoritmos fundamentais de busca com o vídeo de um engenheiro da <strong>Google</strong>, o <strong>Matt Cutts</strong>:
+        https://youtu.be/BNHR6IQJGZs
+    </p>
+    <p>Para criar um hyperlink devemos criar <strong>âncoras</strong> através da tag &lt;a&gt;. O principal atributo dessa tag é o <em>href</em>, onde iremos colocar a <strong>URL</strong> completa para outro site.</p>
+    <strong>EX:</strong> &lt;a href="https://gustavoguanabara.github.io">Aceda ao perfil GitHub&lt;/a&gt;.
+
+    <p>Outro atributo útil da tag é o <em>hreflang</em>, que permite indicar qual é o idioma principal do site para onde o link irá desviar o fluxo de navegação. Isto permite informar o browser e o software de tradução como lidar caso o user opte por traduzir automaticamente os conteúdos.</p>
+    <strong>EX:</strong> &lt;a href="https://www.w3schools.com/html/" hreflang="en"&gt; Site da W3Schools em Inglês &lt;/a&gt;
+
+    <h1>Utilizar links internos</h1>
+    <p>Os links internos são links que estão dentro do nosso próprio site, por exemplo, uma segunda página.</p>
+    <p>Esta é a primeira página do site, caso pretenda poderá também aceder à <a href="page002.html" rel="next" target="_self">segunda página.</a></p>
+    
+    <strong>Nota:</strong> Para colocarmos a page002 no <em>href</em> basta clicar <strong>CONTROL + Barra de Espaço</strong> e escolher. Lembramos de que para acedermos à page 002, esta tem de estar contida na mesma página do index.html.
+    <br>
+    <br>
+    Quando utilizamos links internos não precisamos de colocar a <em>URL</em> completa.
+    <br>
+    <p>Podemos aceder também à <a href="noticias/page003.html" rel="next" target="_self">página de notícias</a>.</p>
+    <strong>Nota:</strong> Verificamos no código HTML5 de que o <em>path</em> desta página é diferente, uma vez que neste <em>path</em> tivemos de aceder ao "interior" da pasta onde se encontra a página de notícias (page 003).
+    <br>
+    <strong>EX:</strong> o <em>path</em> correto é &lt;a href="noticias/page003.html&gt;"&lt;/a&gt;
+    <br>
+    <br>
+    <h1>Links para downloads</h1>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="Ligações_em_toda_parte.pdf" type="application/pdf" target="_blank">Download do livro em PDF</a></li>
+        <strong>Nota:</strong> Temos de colocar na tag &lt;li&gt; com âncora &lt;a&gt; o atributo <em>download + o nome do arquivo a ser baixado</em> e o atributo <em>type</em> para indicar ao navegador que tipo de arquivo está sendo baixado. Verifique o código em HTML - ex010.
+        <br>
+        <strong>Nota 2:</strong> Existem vários <em>media types</em> para consulta podemos aceder ao <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">site indicado</a>.
+        <br>
+        Para o PDF é <em>type="application/pdf"</em> 
+
+        <br>
+        <br>
+
+        <li><a href="livro/10 - Ligações em toda parte.pdf.zip" download="Ligações_em_toda_parte.pdf.zip" type="application/zip">Livro compactado em ZIP</a></li>
+        Para o ZIP é <em>type="application/zip"</em>
+        <br>
+        <br>
+        <strong>Media types usados no nosso dia-a-dia:</strong>
+        <ul type="disc">
+            <li>application/zip</li>
+            <li>text/html</li>
+            <li>text/css</li>
+            <li>text/javascript</li>
+            <li>video/mp4</li>
+            <li>video/H264</li>
+            <li>video/JPEG</li>
+            <li>Audio/aac</li>
+            <li>audio/mpeg</li>
+            <li>font/ttf</li>
+            <li>image/jpeg</li>
+            <li>image/png</li>
+        </ul>
+    </ul>
+</body>
+</html>

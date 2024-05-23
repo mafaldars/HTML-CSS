@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS internal / local</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+
+        h1{
+            color: chocolate;
+            font-size: 1.5em; background-color:burlywood;
+        }
+
+        h2{
+            color:rgb(176, 95, 61); 
+            font-size: 1.2em;
+        }
+
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Capítulo 1</h1>
+    <h2>Capítulo 1.1</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis rem obcaecati itaque reiciendis quod distinctio eos at velit consectetur? Ad quis commodi, nulla repudiandae maxime mollitia eum error dignissimos assumenda?</p>
+
+    <h2>Capítulo 1.2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore qui rem temporibus voluptas fugiat voluptatem in totam hic non, cumque natus rerum ab inventore dolorem at dolores ut necessitatibus perspiciatis?</p>
+
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus facere quas quisquam accusantium perferendis totam ex placeat officiis, officia repellendus similique iure veniam omnis rem quod ut molestias error illo!</p>
+
+    <p><strong>Nota:</strong> As CSS inline é uma técnica que funciona mas não é recomendável porque temos de ir tag a tag para estilizar, demora muito tempo caso o conteúdo do site seja extenso. Imaginemos que contém 100 tags &lt;p&gt; e se tivessemos de estilizar um a um, é incomportável. Manutenção custosa, a técnica não é prática nem eficiente.</p> 
+
+    <p><strong>Nota:</strong> As CSS internal / local são compostas por seletores (body, h1, h2, etc) que contêm declarações (background-color, font-family, etc) e finalizamos (sempre) cada declaração com ; . Desta forma podemos criar os seletores e todos os elementos da página herdaram os valores atribuídos.
+        <br>
+        <strong>Desvantagens:</strong> Estilizar elementos ocupa muitas linhas de código, ao termos o estilo no ínicio da página, teriamos de fazer scroll até baixo para encontrar o ínicio do HTML. Se tivessemos 30 páginas no site, teríamos de copiar e colar os estilos em cada página, não é prático. 
+        <br>
+        CSS local é útil quando aplicado a um único documento, apenas.
+        <br>
+        <br>
+    <strong>EX:</strong>
+        body{
+        background-color: blanchedalmond;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }               
+    </p>
+
+</body>
+</html>

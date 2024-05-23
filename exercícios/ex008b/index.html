@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte / Pré-Formatação</h2>
+    <p>O comando <code>document.getElementById</code>('teste') é escrito em linguagem JavaScript.</p>
+
+    <strong>Nota:</strong> A principal vantagem da tag &lt;code&gt; é o valor semântico que representa, indicando ao navegador que se trata de um código de computador. 
+    <br>
+    Porém, existe também um efeito visual visto que o código é apresentado com letras mono-espaçadas (monospace), o que facilita a leitura do mesmo.
+    <br>
+    Contudo, esta tag não organiza o código (indentação). 
+
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'0 número {num} é PAR)
+    else:
+        print(f'0 número {num} é ÍMPAR)
+        print('Fim do programa')
+        </code>
+    </pre>
+
+    <!-- para termos a indentação no código devemos "envelopar" a tag <code> dentro da tag <pre> (pré-formatado) como fizemos no trecho acima. Feito isto, podemos visualizar no browser o trecho exatamente como o escrevemos, com aparência de formatação Python. -->
+
+        <p><strong>Dica:</strong> Caso queiramos colocar o código totalmente à margem esquerda clicamos em <strong>Shift + TAB</strong> até onde pretendemos. Caso queiramos colocar à margem direita clicamos apenas <strong>TAB</strong> até onde pretendemos. A tag &lt;pre&gt; considera tudo nela contida inclusive os espaços (vários enter, quebras de linha, etc) do VSCode.</p>
+
+        <!--A tag <pre> também é uma tag de pré-formatação de texto.-->
+
+            <h2>Citações simples</h2>
+            <p>Como diria o pai de um amigo: <q>O computador é um burro muito rápido.</q>
+            <br>
+            A tag &lt;q&gt; significa quote-citação. Basta "envelopar" a citação que pretendemos nesta tag.
+            <br>
+            Utilizar esta tag é dar sentido a uma citação.</p>
+
+            <h2>Citações completas</h2>
+            <p>Segundo Jeff Nobel, no seu livro de HTML para leigos:</p>
+            <blockquote cite="https://books.google.co.uk/books/about/HTML_XHTML_e_CSS_Para_Leigos.html?id=E8ZtDwAAQBAJ&redir_esc=y">
+                A diferença entre elementos inline e um bloco de texto é importante. Os elementos neste capítulo descrevem os blocos de texto.
+            </blockquote>
+            A tag &lt;blockquote&gt; é um bloco de citações para determinados autores. Verificamos o espaçamento para dentro (margem) na tela como sinal. Dentro desta tag temos o parâmetro <strong>cite</strong> que indica a citação advém de determinada fonte, um livro neste caso.
+            <br>
+            Visualmente o <strong>cite</strong> com o link do livro não irá aprecer mas os mecanismos de busca do site e do Google (parte interna do site) saberão que a citação pertence a este livro. 
+
+            <h2>Abreviações</h2>
+            <p>Estou a estudar <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> e JavaScript. Amo, quero ter e fazer carreira profissional na área de IT!</p>
+            <br>
+            A tag &lt;abbr&gt; é utilizada quando pretendemos mostrar no browser a definição de uma abreviação, por ex HTML. Ao passarmos o cursor do mouse irá aparecer um mini pop-up com a indicação da sigla HyperText Markup Language.
+
+            <h2>Texto invertido</h2>
+            <p><bdo dir="rtl">Estou a aprender a criar coisas em HTML.</bdo></p>
+
+            A tag &lt;bdo&gt; utiliza-se da esquerda para a direita (leitura corrente) ou vice-versa e basicamente altera a forma como o texto é lido. Colocámos aqui só por piada.
+    
+</body>
+</html>

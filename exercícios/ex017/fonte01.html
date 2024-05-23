@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            /* a instrução acima indica que primeiramente o gadget irá tentar usar a fonte Arial, caso não possua, em seguida, irá recorrer à Helvetica, caso não possua irá recorrer a uma fonte sans-serif (CSS Web Safe Font Combination - w3schools);
+            Podemos dar a instrução apenas com monospace - sans-serif - serif - todos os dispositivos têm fontes de cada tipo 
+            */
+        }
+       
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            /* lighter normal bold bolder
+            - Também existe o peso numérico de 100 a 900 mas nem todas as fontes suportam */
+            font-size: 3em;
+            font-style: normal;text-decoration: underline;
+            /* shorthand font
+            - font-style -> font weight -> font-size -> font-family
+            
+            O shorthand font declara todas as declarações que fizemos acima numa única declaração mas temos de colocar pela ordem indicada acima.
+            */
+        }
+
+        h2 {
+            font: italic bolder 2em 'Work Sans';
+            /* testar o shorthand font */
+        }
+
+        /*
+        Medidas Absolutas
+        - cm (centímetro)
+        - mm (milímetro)
+        - in (polegada)
+        - px (pixel - há telas que utilizam pixel duplo, quadruplo, etc, logo aí podemos ter medidas diferentes conforme a tela de visualização)
+        - pt (ponto - usado em impressão em papel)
+        - pc (paica - usado em impressão de papel)
+        
+        Medidas Relativas
+        - em (medida relativa ao tamanho atual da fonte - ao tamanho M de uma fonte - relativo ao tamanho padrão da fonte)
+        - ex (medida relativa à altura X de uma fonte)
+        - rem (relativo ao root - fonte configurada no body)
+        - vw (view width/largura da viewport - percentagem da largura da viewport de cada dispositivo)
+        - vh (view height/altura da viewport)
+        - % 
+
+        A recomendação da W3C (orgão de regulamentação da web) para font-size é utilizar as medidas px e em.
+
+        Normalmente os browsers têm por default tamanho de fonte 16px.
+
+        16px geralmente = 1em
+        */
+
+        
+    </style>
+</head>
+<body>
+    <h1>Trabalhar com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et eaque totam iure mollitia eligendi aliquam! Vel nam dolores, optio, est repellendus, veritatis doloribus nulla modi rerum eaque quis a. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt beatae aut quo odio aliquam at repellendus magni rerum sequi, earum numquam laboriosam blanditiis accusantium sit velit sed quasi possimus hic!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ad sed unde saepe est tempore cumque odio quod laboriosam. Modi ratione blanditiis necessitatibus eius nesciunt ea doloribus odit, alias aliquam.</p>
+
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur et asperiores ipsum accusamus alias? Ipsum fuga ut vitae voluptate harum minima aliquam illo dolor, quod nobis veritatis suscipit blanditiis autem!</p>
+    
+</body>
+</html>

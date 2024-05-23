@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /* 
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = children 
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* 
+        pseudoclasse visited 
+        */
+        a:visited {
+            color: darkred;
+        }
+
+        /* 
+        pseudoclasse hover
+        */
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        /* 
+        pseudoclasse active
+        */
+
+        a:active {
+            color: green;
+        }
+
+        /* 
+        A declaração abaixo diz: depois/antes de todos os links indica um content [-> e <-].
+        Conseguimos adicionar coisas antes e coisas depois na periferia.
+        */ 
+        .especial::before {
+            content: '⟹';
+            text-decoration: none;
+            font-weight: bolder;
+            color: rgb(140, 138, 138);
+        }
+        .especial::after {
+            content: '⟸';
+            text-decoration: none;
+            font-weight: bolder;
+            color: rgb(140, 138, 138);
+        }
+
+        .especial {
+            background-color: rgb(255, 177, 177);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizar Links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do Curso em Vídeo</a></li>
+    </ul>
+
+    <p>Os <strong>pseudo-elementos (em CSS = ::)</strong> são palavras-chave adicionadas às declarações de um seletor e permitem formatar um pedaço específico de um elemento. Pseudo-elementos podem ser utilizados em <em>class</em>, <em>id</em>, nos <em>elementos</em> e mexem no conteúdo periférico do elemento.
+        <br>
+    Os principais pseudo-elementos usados nas CSS são ::before, ::after, ::first-letter, ::first-line.
+    <br>
+    Os <em>pseudo-elementos</em> <strong>::after</strong> e <strong>::before </strong> indicam que podemos mostrar coisas antes e depois do elemento.
+</p>
+
+
+<h2>Seletores personalizados:</h2>
+<p>
+        <ul>
+            <li> #  = id</li>
+            <li> .  = class</li>
+            <li> :  = pseudo-class</li>
+            <li> :: = pseudo-element</li>
+            <li> >  = children</li>
+        </ul>
+</p>
+
+<p><strong>Nota:</strong> O uso das pseudo-classes e dos pseudo-elementos é para personalização.</p>
+    
+</body>
+</html>

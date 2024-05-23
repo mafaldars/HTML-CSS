@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir este site em   gadgets diferentes ou simplesmente aumente e diminua o tamanho do seu browser.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/forestsmall.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/mountainmedium.png" type="image/png">
+        <!-- Abaixo, o browser irá carregar a foto grande mas caso o browser chegar a menos de 1000px (acima) ele irá carregar a foto medium.
+        50px é a medida da largura, normalmente, para a barra de rolagem. -->
+        <img src="imagens/oceanbig.png" alt="imagem flexível">
+        <!-- Dentro da tag <picture>, a base é sempre a imagem padrão que queremos carregar e por cima iremos adicionar a tag source media type como uma escada. BIG > MEDIUM > SMALL -->
+    </picture>
+    <hr>
+    <p>Atualmente podemos aceder a um site apartir de vários tipos de gadgets:smartphones, tablets, notebooks, computadores desktop, smart TV, etc. Pensando nisto, iremos precisar de adaptar o conteúdo dos sites que iremos criar para as diferentes telas.</p>
+    <p>As imagens são o tipo de arquivo que mais sofre com os problemas de exibição. Uma TV pode exibir imagens gigantes mas se usarmos a mesma fotografia para ser apresentada num smartphone teremos que redimensionar obrigatoriamente a imagem com as CSS.</p>
+    <p><strong>Smartphone:</strong> Utilizar uma imagem 300x300</p>
+    <p><strong>Tablet:</strong> Utilizar uma imagem de 700x700</p>
+    <p><strong>TV:</strong> Utilizar uma imagem 1000x1000</p>
+    <p><strong>Nota:</strong> o design responsivo é de extrema importância. Por exemplo, se o user entra num site e sai o Google interpreta isso como <em>bounce rate</em> (taxa de rejeição), esta taxa é uma medida para dar valor ou desvalorizar um site.
+        <br>
+        <em>Auto Bounce rate</em> é quando um user pesquisa por algo, é direcionado para um site mas sai, não permanece, então o Google parará de indicar a outros users o site para aquele artigo procurado.</p>
+
+        <h1>Reproduzir Áudio</h1>
+        <p>Vamos reproduzir áudios em HTML5.</p>
+        <audio src="midia/summercuba.mp3" controls autoplay></audio>
+        <br>
+        <strong>Nota:</strong> Dependendo do browser a indicação na tag &lt;audio&gt; do <em>autoplay</em> deverá reproduzir automaticamente o áudio. Para termos os controles do áudio na tag &lt;audio&gt; devemos colocar <em>controls</em>.
+        <h2>Formatos áudio:</h2>
+        <ul>
+            <li>MP3 (melhor)</li>
+            <li>WAV (muito pesado, evitar usar)</li>
+            <li>OGG (formato open-source)</li>
+        </ul>
+        <p>Para termos compatibilidade total dos formatos em vários navegadores devemos ter outras opções de reprodução, pois a tag apresentada acima poderá e não é compatível com todos os browsers.</p>
+        <h2>Outra forma de reproduzir áudios</h2>
+
+            <audio preload="metadata" controls>
+                <source src="midia/daynoche.mp3" type="audio/mpeg">
+                <source src="midia/guanacast-33.ogg" type="audio/ogg">
+                <source src="midia/alien.wav" type="audio/wav">
+                <p><a href="midia/daynoche.mp3">Clique aqui para efetuar o download do arquivo MP3.</a>
+                </p>
+            </audio>
+
+        <p>A outra opção de código, dentro da tag &lt;audio&gt; inserirmos 
+            <br>
+            &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+            <br>
+            &lt;source src="audio.wav" type="audio/wav"&gt;
+            <br>
+            &lt;source src="audio.ogg" type="audio/ogg"&gt;
+            <br>
+            &lt;/audio&gt;
+        </p>
+        <strong>Nota:</strong> Lembrar que devemos adicionar os diferentes tipos de áudio na <em>source</em> e no <em>type</em> (WAV ou OGG).
+        <br>
+        A ordem em que colocamos o código definirá a ordem pela qual o browser irá tentar reproduriz os formatos (de cima para baixo).
+        <br>
+        Caso o browser não consiga reproduzir mediante as instruções dadas pelo código, infelizmente o browser não conseguirá reproduzir áudios, posto isto, devemos colocar essa indicação na tag &lt;p&gt;(que irá ser exibida para o user) e disponibilizar o arquivo para download com a tag &lt;a href&gt;.
+
+        <h1>Reproduir Vídeos</h1>
+        <p>Formatos de vídeos:</p>
+        <ul>
+            <li>MP4 (.M4V)</li>
+            <li>OGV (no formato vídeo)</li>
+            <li>WEBM (qualidade péssima)</li>
+        </ul>
+        <strong>Nota:</strong> softwares e banco de arquivos gratuitos:
+            <ol>
+                <li>Imagens</li>
+                <ul type="disc">
+                    <li>Gimp</li>
+                    <li>Pexels</li>
+                </ul >
+                <li>Áudio</li>
+                <ul type="disc">
+                    <li>YouTube - Studio - Biblioteca áudios</li>
+                </ul>
+                <li>Vídeos</li>
+                <ul type="disc">
+                    <li>HandBrake</li>
+                    <li>Pexels</li>
+                </ul>
+            </ol>
+
+    
+</body>
+</html>
