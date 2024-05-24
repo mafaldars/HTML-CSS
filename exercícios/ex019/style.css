@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 /* 
-Em HTML é id = em CSS é # (só pode um elemento)
-Em HTML é class = em CSS é . (pode vários elementos)
+Em HTML é id = em CSS é # (só pode ser adicionado a um elemento)
+Em HTML é class = em CSS é . (pode ser associado a vários elementos)
 */
 
 body {
@@ -25,7 +25,7 @@ h2 {
 }
 
 /* 
-no class normalmente não colocamos o nome do elemento, basta o .nomedoelemento
+na class normalmente não colocamos o nome do elemento, basta o .nomedoelemento
 */
 
 .basico {

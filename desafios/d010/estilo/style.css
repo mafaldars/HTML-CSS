@@ -19,8 +19,8 @@ Paleta de cores monocromáticas
 */
 
 /* 
-Pseudo classe :root que todos os documentos têm. É a "raíz da árvore" do nosso documento. 
-Tudo o que declararmos dentro da pseudo classe :root servirá para o documento inteiro. 
+Pseudo-class :root que todos os documentos têm. É a "raíz da árvore" do nosso documento. 
+Tudo o que declararmos dentro da pseudo-class :root servirá para o documento inteiro. 
 
 Iremos declarar as variáveis globais dentro do :root
 Todas as variáveis em CSS começam com -- (dois traços) seguidos do nome atribuído à variável (os nomes não podem conter espaços).
@@ -48,8 +48,8 @@ Regras globais para todos os elementos
 }
 
 /*
-Clicar control + Barra de espaço, no final da lista de cores teremos as variáveis das cores criadas acima no :root.
-Automaticamento criará a função var() ao escolhermos uma cor.
+Clicar Control + Barra de espaço, no final da lista de cores teremos as variáveis das cores criadas acima no :root.
+Automaticamente criará a função var() ao escolhermos uma cor.
  */
 body {
     background-color: var(--cor0);

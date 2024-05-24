@@ -13,15 +13,17 @@ main {
     background-color: white;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #5f67429b;
-    /* primeiro parâmetro é quanto a sombra vai "andar" para o lado;
+    /* 
+    primeiro parâmetro é quanto a sombra vai "andar" para o lado;
     segundo parâmetro é quanto a sombra vai "andar" para baixo;
     terceiro parâmetro é quanto a sombra se espalha;
-    último parâmetro é a cor e a transparência que a sombra vai ter */
+    último parâmetro é a cor e a transparência que a sombra vai ter 
+    */
 
     width: 600px;
     padding: 10px;
     margin: auto;
-    /* independentemente do tamanho da tela, margin auto centraliza sempre os elementos */
+    /* independentemente do tamanho da tela, margin: auto centraliza sempre os elementos */
 }
 
 h1 {
