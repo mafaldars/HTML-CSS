@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio Astronauta</title>
     <style>
-        main {
-            background-color: black;
+        #container {
+            background-image: url('imagens/espaco.jpg');
+            background-size: 100% 100%;
+            position: relative;
+            /*
+            position: relative é o padrão de box em HTML.
+            O que contém conteúdo.
+            */
+            height: 100vh;
+        }
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
-    <main>
-        <section id="container">
-        <article id="conteudo">
-
-        </article>
+    <section id="container">
+        <img src="imagens/astronauta.png" alt="Astronaute">
     </section>
-    </main>
     
 </body>
 </html>
