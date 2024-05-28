@@ -3,28 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Background-attachment property</title>
     <style>
         body {
             height: 100vh;
+            /*
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: repeat-y;
-            /*
-            repeat no eixo y (vertical) pois o conteúdo (<p>) excedeu a imagem de fundo
-            */
+            background-repeat: no-repeat;
             background-size: cover;
-            /*
+            
             auto - o browser redimensiona conforme as telas - desformata a imagem
             contain - a imagem é 100% exibida - não tem cortes
             cover - irá cobrir a tela inteira - não exibe 100% da imagem mas ocupa 100% da viewport
             */
+
+            /*
+            background-attachment: fixed;
+            
+            scroll - padrão - o fundo rola juntamente com o conteúdo
+            fixed - o fundo fica fixo e só rola o conteúdo
+            */
+
+            /*
+            Shorthand - background
+            color > image > position > repeat > [size] > attachment
+
+            Na documentação oficial W3C o shorthand é declarado na ordem acima mas o size não funciona, atualmente. 
+            Devemos declarar o background-size após a shorthand para funcionar, como no trecho abaixo.
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+
         }
 
         main {
             background-color: white;
-            width: 500px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid black;
