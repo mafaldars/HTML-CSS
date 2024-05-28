@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento vertical</title>
+    <style>
+        #container {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+            
+            position: relative;
+            /*
+            position: relative é o padrão de box em HTML.
+            O que contém conteúdo.
+            */
+            height: 94vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo {
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%;
+
+            position: absolute;
+            /*
+            quando declaramos position: absolute num elemento podemos configurar left: e top: 
+            */
+            height: 200px;
+            width: 400px;
+            background-color: plum;
+
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+            /*
+            o primeiro valor negativo irá mover para a esquerda e o segundo valor negativo irá mover para cima (moverá para o centro do container).
+
+            Quando declaramos valores positivo irão mover-se para a direita e para baixo.
+            */
+
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+    
+</body>
+</html>
