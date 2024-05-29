@@ -1,2 +1,73 @@
 @charset "UTF-8";
 
+/* global rules */
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    text-align: center;
+
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    /*
+    poderia ter utilizado o text-transform: uppercase; mas optei por font-variant: small-caps; para melhor elegibilidade
+    */
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+    color: red;
+}
+/* criar espaço para o Parallax Scrolling Effect */
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 40px;
+
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.image {
+    background-color: plum;
+}
+
+section.image > p {
+    background-color: rgba(25, 25, 25, 0.333);
+    color: white;
+    width: 400px;
+}
+
+footer {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
