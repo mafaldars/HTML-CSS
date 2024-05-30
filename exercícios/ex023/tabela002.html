@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 700px;
+            border-collapse: collapse;
+        }
+        
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: rgb(56, 55, 55);
+            color: white;
+            text-wrap: nowrap;
+        }
+        
+        th, td {
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+        td.number {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste tabelas grandes</h1>
+
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE 
+            CAPTION = legenda
+            THEAD = cabeça
+                TR, TD, TH
+            TBODY = corpo
+                TR, TD, TH
+            TFOOT = rodapé
+                TR, TD, TH
+    -->
+
+    <table>
+        <caption>População por Cantões da Suiça</caption>
+        <thead>
+            <tr>
+                <th scope="col">Cantão</th>
+                <th scope="col">Adesão</th>
+                <th scope="col">Capital</th>
+                <th scope="col">População</th>
+                <th scope="col">Área km²</th>
+                <th scope="col">Comunas</th>
+                <th scope="col">Idioma oficial</th>
+                <!-- 
+                    SCOPE é de extrema importância para os mecanismos de busca > analisam os dados da tabela de forma coerente (dados da coluna ou dados da linha), para fazer sentido.
+                -->
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Zürich</td>
+                <td class="number">1351</td>
+                <td>Zürich</td>
+                <td class="number">1.284.052</td>
+                <td class="number">1729</td>
+                <td class="number">171</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td>Bern</td>
+                <td class="number">1353</td>
+                <td>Bern</td>
+                <td class="number">958.897</td>
+                <td class="number">5959</td>
+                <td class="number">398</td>
+                <td>alemão, francês</td>
+            </tr>
+
+            <tr>
+                <td>Luzern</td>
+                <td class="number">1332</td>
+                <td>Luzern</td>
+                <td class="number">359.110</td>
+                <td class="number">1493</td>
+                <td class="number">97</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td>Uri</td>
+                <td class="number">1291</td>
+                <td>Altdorf</td>
+                <td class="number">34.948</td>
+                <td class="number">1077</td>
+                <td class="number">20</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td>Schwyz</td>
+                <td class="number">1291</td>
+                <td>Schwyz</td>
+                <td class="number">138.832</td>
+                <td class="number">908</td>
+                <td class="number">30</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td>Obwald</td>
+                <td class="number">1291</td>
+                <td>Sarnen</td>
+                <td class="number">33.755</td>
+                <td class="number">491</td>
+                <td class="number">7</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td>Nidwald</td>
+                <td class="number">1291</td>
+                <td>Stans</td>
+                <td class="number">40.012</td>
+                <td class="number">276</td>
+                <td class="number">11</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td>Glarus</td>
+                <td class="number">1352</td>
+                <td class="number">Glarner</td>
+                <td class="number">38.084</td>
+                <td class="number">685</td>
+                <td class="number">27</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td>Zug</td>
+                <td class="number">1352</td>
+                <td>Zug</td>
+                <td class="number">107.171</td>
+                <td class="number">239</td>
+                <td class="number">11</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td>Fribourg</td>
+                <td class="number">1481</td>
+                <td>Fribourg</td>
+                <td class="number">258.252</td>
+                <td class="number">1671</td>
+                <td class="number">182</td>
+                <td>francês, alemão</td>
+            </tr>
+
+            <tr>
+                <td>Solothurn</td>
+                <td class="number">1481</td>
+                <td>Solothurn</td>
+                <td class="number">248.613</td>
+                <td class="number">791</td>
+                <td class="number">126</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td>Basel-Stadt</td>
+                <td class="number">1501</td>
+                <td>Basel</td>
+                <td class="number">184.822</td>
+                <td class="number">37</td>
+                <td class="number">3</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td>Basel-Feld</td>
+                <td class="number">1501</td>
+                <td>Liestal</td>
+                <td class="number">267.166</td>
+                <td class="number">518</td>
+                <td class="number">86</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td>Schaffhausen</td>
+                <td class="number">1501</td>
+                <td>Schaffhausen</td>
+                <td class="number">73.866</td>
+                <td class="number">298</td>
+                <td class="number">33</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td>Appenzell-Draussen</td>
+                <td class="number">1513</td>
+                <td>Herisau</td>
+                <td class="number">52.509</td>
+                <td class="number">243</td>
+                <td class="number">20</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td>Appenzell-Innere</td>
+                <td class="number">1513</td>
+                <td>Appenzell</td>
+                <td class="number">15.300</td>
+                <td class="number">173</td>
+                <td class="number">6</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td>St. Gallen</td>
+                <td class="number">1803</td>
+                <td>St. Gallen</td>
+                <td class="number">461.810</td>
+                <td class="number">2.026</td>
+                <td class="number">89</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td>Grisons</td>
+                <td class="number">1803</td>
+                <td>Coire</td>
+                <td class="number">187.920</td>
+                <td class="number">7105</td>
+                <td class="number">208</td>
+                <td>alemão, romanche, italiano</td>
+            </tr>
+
+            <tr>
+                <td>Argovie</td>
+                <td class="number">1803</td>
+                <td>Aarau</td>
+                <td class="number">574.813</td>
+                <td class="number">1404</td>
+                <td class="number">231</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td>Thurgau</td>
+                <td class="number">1803</td>
+                <td>Frauenfeld</td>
+                <td class="number">235.764</td>
+                <td class="number">991</td>
+                <td class="number">80</td>
+                <td>alemão</td>
+            </tr>
+
+            <tr>
+                <td>Ticino</td>
+                <td class="number">1803</td>
+                <td>Bellinzona</td>
+                <td class="number">324.851</td>
+                <td class="number">2.812</td>
+                <td class="number">201</td>
+                <td>italiano</td>
+            </tr>
+
+            <tr>
+                <td>Vaud</td>
+                <td class="number">1803</td>
+                <td>Lausanne</td>
+                <td class="number">662.145</td>
+                <td class="number">3.212</td>
+                <td class="number">382</td>
+                <td>francês</td>
+            </tr>
+
+            <tr>
+                <td>Valais</td>
+                <td class="number">1815</td>
+                <td>Sion</td>
+                <td class="number">294.608</td>
+                <td class="number">5.224</td>
+                <td class="number">158</td>
+                <td>francês, alemão</td>
+            </tr>
+
+            <tr>
+                <td>Neuchâtel</td>
+                <td class="number">1815</td>
+                <td>Neuchâtel</td>
+                <td class="number">168.912</td>
+                <td class="number">803</td>
+                <td class="number">62</td>
+                <td>francês</td>
+            </tr>
+
+            <tr>
+                <td>Genève</td>
+                <td class="number">1815</td>
+                <td>Genève</td>
+                <td class="number">433.235</td>
+                <td class="number">282</td>
+                <td class="number">45</td>
+                <td>francês</td>
+            </tr>
+
+            <tr>
+                <td>Jura</td>
+                <td class="number">1979</td>
+                <td>Delémont</td>
+                <td class="number">69.292</td>
+                <td class="number">838</td>
+                <td class="number">83</td>
+                <td>francês</td>
+            </tr>
+
+            <tr>
+                <td>Schweiz/Suisse</td>
+                <td>-</td>
+                <td>Bern</td>
+                <td class="number">7.508.739</td>
+                <td class="number">41.285</td>
+                <td class="number">2.767</td>
+                <td>alemão, francês, italiano, romanche</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <th scope="row">Total de habitantes</th>
+            <td class="number"><strong>7.508.739</strong></td>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
