@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 7px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Mesclar Células</h1>
+
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+    <p>
+        Existe <strong>expansão em forma de coluna</strong> e <strong>expansão em  forma de linha</strong>.
+    </p>
+
+    <p>
+        A <strong>expansão em coluna (colspan)</strong> foi efetuada na célula B, a mesma ocupa duas colunas. 
+        <br>
+        <strong>EX:</strong>
+        <code>
+            &lt;td colspan="2"&gt;B&lt;/td&gt;
+        </code>
+    </p>
+    
+</body>
+</html>

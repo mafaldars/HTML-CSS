@@ -15,9 +15,9 @@
         <br>
         <br>
 
-        <strong>Nota:</strong> Quando acedemos através de um link externo o user é redirecionado diretamente para outro site, sobrepondo o nosso (comportamento não desejado). Para isso não acontecer devemos colocar os atributos target="_blank" rel="external". 
+        <strong>Nota:</strong> Quando acedemos através de um link externo o user é redirecionado diretamente para outro site, sobrepondo o nosso (comportamento não desejado). Para isso não acontecer devemos colocar os atributos <code>target="_blank" rel="external"</code>. 
         <br>
-        Não colocamos target="_blank" rel="external" quando se trata de um hyperlink para o nosso próprio site. 
+        Não colocamos <code>target="_blank" rel="external"</code> quando se trata de um hyperlink para o nosso próprio site. 
     </p>
     <p>Resumindo, para podermos controlar onde o site de destino irá abrir, utilizamos o atributo <em>target</em> que suporta os seguintes valores:
         <br>
@@ -29,7 +29,7 @@
         <br>
         <strong>_parent</strong> - similar ao uso do _top em uma referência à janela mãe nome-do-frame caso esteja usando frames, indicar o nome da janela a abrir.
         <br>
-        <strong>Nota:</strong> Foquemo-nos apenas em _blank e _self pois o uso de frames é uma técnica quase em desuso.
+        <strong>Nota:</strong> Foquemo-nos apenas em <code>_blank</code> e <code>_self</code> pois o uso de frames é uma técnica quase em desuso.
     </p>
         
     <p>
@@ -49,10 +49,10 @@
         
     </p>
     <p>Para criar um hyperlink devemos criar <strong>âncoras</strong> através da tag &lt;a&gt;. O principal atributo dessa tag é o <em>href</em>, onde iremos colocar a <strong>URL</strong> completa para outro site.</p>
-    <strong>EX:</strong> &lt;a href="https://gustavoguanabara.github.io">Aceda ao perfil GitHub&lt;/a&gt;.
+    <strong>EX:</strong> <code>&lt;a href="https://gustavoguanabara.github.io">Aceda ao perfil GitHub&lt;/a&gt;</code>.
 
     <p>Outro atributo útil da tag é o <em>hreflang</em>, que permite indicar qual é o idioma principal do site para onde o link irá desviar o fluxo de navegação. Isto permite informar o browser e o software de tradução como lidar caso o user opte por traduzir automaticamente os conteúdos.</p>
-    <strong>EX:</strong> &lt;a href="https://www.w3schools.com/html/" hreflang="en"&gt; Site da W3Schools em Inglês&lt;/a&gt;
+    <strong>EX:</strong> <code>&lt;a href="https://www.w3schools.com/html/" hreflang="en"&gt; Site da W3Schools em Inglês&lt;/a&gt;</code>
 
     <h1>Utilizar links internos</h1>
     <p>Os links internos são links que estão dentro do nosso próprio site, por exemplo, uma segunda página.</p>
@@ -66,7 +66,7 @@
     <p>Podemos aceder também à <a href="noticias/page003.html" rel="next" target="_self">página de notícias</a>.</p>
     <strong>Nota:</strong> Verificamos no código HTML5 de que o <em>path</em> desta página é diferente, uma vez que neste <em>path</em> tivemos de aceder ao "interior" da pasta onde se encontra a página de notícias (page 003).
     <br>
-    <strong>EX:</strong> o <em>path</em> correto é &lt;a href="noticias/page003.html&gt;"&lt;/a&gt;
+    <strong>EX:</strong> o <em>path</em> correto é <code>&lt;a href="noticias/page003.html&gt;"&lt;/a&gt;</code>
     <br>
     <br>
     <h1>Links para downloads</h1>

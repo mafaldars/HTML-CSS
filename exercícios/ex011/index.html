@@ -49,15 +49,19 @@
                 </p>
             </audio>
 
-        <p>A outra opção de código, dentro da tag &lt;audio&gt; inserirmos 
+        <p>A outra opção de código, dentro da tag &lt;audio&gt; inserimos: 
             <br>
-            &lt;source src="audio.mp3" type="audio/mpeg"&gt;
-            <br>
-            &lt;source src="audio.wav" type="audio/wav"&gt;
-            <br>
-            &lt;source src="audio.ogg" type="audio/ogg"&gt;
-            <br>
-            &lt;/audio&gt;
+            <code>
+                &lt;audio&gt;
+                <br>
+                &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+                <br>
+                &lt;source src="audio.wav" type="audio/wav"&gt;
+                <br>
+                &lt;source src="audio.ogg" type="audio/ogg"&gt;
+                <br>
+                &lt;/audio&gt;
+            </code>
         </p>
         <strong>Nota:</strong> Lembrar que devemos adicionar os diferentes tipos de áudio na <em>source</em> e no <em>type</em> (WAV ou OGG).
         <br>
@@ -66,7 +70,8 @@
         Caso o browser não consiga reproduzir mediante as instruções dadas pelo código, infelizmente o browser não conseguirá reproduzir áudios, posto isto, devemos colocar essa indicação (mensagem) na tag &lt;p&gt;(que irá ser exibida para o user) e disponibilizar o arquivo para download com a tag &lt;a href&gt;.
         
         <p>
-            EX: &lt;a href="midia/daynoche.mp3" download="daynoche.mp3" type="application.mp3"&gt;
+            <strong>EX:</strong> 
+            <code>&lt;a href="midia/daynoche.mp3" download="daynoche.mp3" type="application.mp3"&gt;</code>
         </p>
 
         <p>
