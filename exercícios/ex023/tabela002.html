@@ -26,14 +26,36 @@
             color: white;
             text-wrap: nowrap;
         }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+            /*
+            :nth-child(2n)
+            de 2 em 2 adiciona cor à linha. Efeito zebrado na tabela para melhor elegibilidade. 
+            Podemos adicionar de 3 em 3, 4 em 4, etc.
+            ODD (2n-1) - ímpar - adiciona cor ao valor ímpar 
+            EVEN (2n) - par - adiciona cor ao valor par
+            */
+        }
+
+        tbody > tr > td {
+            text-align: center;
+        }
+
         
         th, td {
             padding: 5px;
             border: 1px solid black;
+            
         }
 
         td.number {
             text-align: right;
+        }
+
+        img {
+            display: block;
+            margin: auto;
         }
     </style>
 </head>
@@ -152,7 +174,7 @@
                 <td><img src="images/Glarus.png" alt="Glarus flag"></td>
                 <td>Glarus</td>
                 <td class="number">1352</td>
-                <td class="number">Glarner</td>
+                <td>Glarner</td>
                 <td class="number">38.084</td>
                 <td class="number">685</td>
                 <td class="number">27</td>
