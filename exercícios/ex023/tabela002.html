@@ -12,8 +12,15 @@
         table {
             width: 700px;
             border-collapse: collapse;
+            position: relative;
         }
-        
+
+        th, td {
+            padding: 7px;
+            border: 1px solid black;
+            
+        }
+
         caption {
             font-size: 1.5em;
             font-weight: bold;
@@ -25,6 +32,12 @@
             background-color: rgb(56, 55, 55);
             color: white;
             text-wrap: nowrap;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(56, 55, 55);
         }
 
         tbody > tr:nth-child(2n) {
@@ -43,13 +56,6 @@
             text-align: center;
         }
 
-        
-        th, td {
-            padding: 5px;
-            border: 1px solid black;
-            
-        }
-
         td.number {
             text-align: right;
         }
@@ -60,6 +66,7 @@
         }
     </style>
 </head>
+
 <body>
     <h1>Teste de tabelas grandes</h1>
 
