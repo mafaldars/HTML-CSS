@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        thead {
+            background-color: rgb(197, 99, 94);
+            color: white;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercício de tabelas</h1>
+
+    <table>
+        <caption>
+            Filmes favoritos
+        </caption>
+
+        <thead>
+            <tr>
+                <th>Género</th>
+                <th>Nomes</th>
+                <th colspan="3">Filmes</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th rowspan="3">Feminino</th>
+                <td>Susana Windsor</td>
+                <td>Her</td>
+                <td>Inception</td>
+                <td>The Imitation Game</td>
+            </tr>
+
+                <tr>
+                    <td>Mafalda Jobs</td>
+                    <td>Matrix trilogy</td> 
+                    <td>Split</td>
+                    <td>Ready Player 1</td>
+                </tr>
+
+                <tr>
+                    <td>Madalena Turing</td>
+                    <td>Gattaca</td>
+                    <td>Ex-Machina</td>
+                    <td>Interstellar</td>
+                </tr>
+
+            <tr>
+                <th rowspan="3">Masculino</th>
+                <td>Guilherme Musk</td>
+                <td>A Rede Social</td>
+                <td>Steve Jobs</td>
+                <td>2001 - Space Odyssey</td>
+            </tr>
+
+                <tr>
+                    <td>Nuno Bezos</td>
+                    <td>The Billion Dollar Code</td>
+                    <td>Transcendence</td>
+                    <td>Avatar</td>
+                </tr>
+
+                <tr>
+                    <td>Martin Gates</td>
+                    <td>Theory of Everything</td>
+                    <td>Social Media Dilemma</td>
+                    <td>Tetris</td>
+                </tr>
+            
+        </tbody>
+
+    </table>
+</body>
+</html>
