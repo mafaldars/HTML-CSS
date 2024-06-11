@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iframe</title>
+    <style>
+        iframe {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
 </head>
 <body>
     <h1>Testar o uso de iframe</h1>
     <p>
         Acessar o site do 
 
-        <iframe src="https://www.cursoemvideo.com" frameborder="0">
-
+        <!-- Tamanho padrão 300x150 -->
+        <iframe src="https://www.cursoemvideo.com" frameborder="0" height="500">
+            <a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a>
+            <!-- este link será exibido caso o browser não seja compatível com iframe -->
         </iframe>
         <!-- iframe é elemento inline -->
 
@@ -21,19 +29,23 @@
     <p>
         O 
         <iframe src="https://www.google.com" frameborder="0">
-
+            <a href="https://www.google.com" target="_blank"></a>
+            <!-- este link será exibido caso o browser não seja compatível com iframe -->
         </iframe> 
         
-        é o maior motor de busca do mundo. 
+        é o maior motor de busca do mundo. Tem proteção contra a exibição do seu site através de sites de terceiros.
         <!-- existem sites que têm proteção contra a sua exibição em sites de terceiros, como podemos observar no site do Google. -->
     </p>
 
     <p>
         Aceder ao meu 
 
-        <iframe src="https://mafaldars.github.io" frameborder="0"></iframe>
+        <iframe src="https://mafaldars.github.io" frameborder="0">
+            <a href="https://mafaldars.github.io" target="_blank">GitHub</a>
+            <!-- este link será exibido caso o browser não seja compatível com iframe -->
+        </iframe>
 
-        repositório online.
+        repositório no GitHub.
     </p>
     
 </body>
