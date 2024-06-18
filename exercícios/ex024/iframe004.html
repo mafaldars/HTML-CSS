@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes</title>
+</head>
+<body>
+    <h1>Site principal</h1>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam rem, corrupti, quasi quisquam eos sed, ad quo voluptates voluptatibus rerum voluptate pariatur non officiis officia ullam impedit facilis deserunt corporis?</p>
+
+    <iframe src="paginas-extras/page004.html" sandbox="sandbox" referrerpolicy="no-referrer-when-downgrade">
+        O browser não é compatível.
+    </iframe>
+    <!-- 
+    O atributo sandbox="sandbox" bloqueia todos os acessos que outros sites (ataques maliciosos) tentem fazer aos dados inseridos dentro do iframe, desta forma estamos a criar uma proteção a possíveis ataques. 
+    Sandbox="sandbox" liga todas as configurações de segurança no máximo, no que é capaz de fazer. 
+    Sandbox="allow-same-origin allow-forms allow-scripts" - permitimos da origem, formulário e scripts, as outras configurações estão ativas pela segurança.
+
+    O parâmetro referrerpolicy (política de referência) é uma camada adicional de proteção, o valor padrão é no-referrer-when-downgrade. Para tornar o conteúdo carregado dentro do iframe mais limitado temos o valor referrerpolicy="no-referrer" - isto diz "o que está carregado dentro do iframe não irá colectar nenhum tipo de dados do usuário".
+    -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident voluptas et, explicabo dicta molestias, modi ex eius soluta, vitae illo quo accusamus mollitia voluptatum natus officiis repudiandae obcaecati laudantium facere?</p>
+    
+</body>
+</html>
