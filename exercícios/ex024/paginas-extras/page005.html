@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
+    <style>
+        body {
+            font-family: monospace;
+            background-color: rgb(127, 182, 184);
+        }
+
+        a {
+            color: black;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <a href="#" onclick="clicou()">Clique aqui</a>
-    <div class="saida">
+    <div id="saida"></div>
 
-    </div>
-    
     <script>
         function clicou() {
             s = window.document.getElementById("saida")
-            s.innerHTML += '<p> Já clicou!</p>'
+            s.innerHTML += '<p>Já clicou!</p>'
         }
     </script>
 </body>
