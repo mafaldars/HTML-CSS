@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Forms</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -12,22 +12,50 @@
 </head>
 <body>
     <h1>Formulário simples</h1>
-    <form action="login.php" autocomplete="off">
-        <!-- o autocomplete="off" desativa as sugestões escritas anteriormente (nomes, por ex) -->
+    <form action="login.php" method="post" autocomplete="off">
+        <!-- 
+        O autocomplete="off" desativa as sugestões escritas anteriormente (nomes, por ex).
 
-        <p><label for="inome">Nome:</label> 
-            <!-- label for="" associa o Nome: à caixa de input (onde digitamos o nome), desta forma o browser identifica/associa o label à caixa. 
-            Utiliza-se o id no label for -->
+        Existem 2 type method:
+        GET - padrão - visualizamos os dados na URL - nom=maf&apelido=san - utiliza-se em dados como: peso, altura, nome, etc - dados menos sensíveis.
+        GET method só envia dados até 3 mil bytes (ex - 3 mil letras).
 
-            <input type="text" name="nome" id="inome"></p>
-        <p><label for="iapelido">Apelido:</label> 
-            <input type="text" name="apelido" id="iapelido"></p>
+        POST - os dados ficam ocultos na URL - visualizamos login.php - utiliza-se em dados como: número de cartões bancários, passwords, moradas, contribuintes, etc - dados mais sensíveis.
+        POST method utilizamos também para enviar dados com mais de 3 mil bytes e envio de arquivos (ex: fotografias).
+        
+
+        Ainda assim, podemos consultar através da Console > Network > Payload (ao lado de Headers) e iremos obter os dados nome + apelido e vemos o erro do formulário a encarnado.
+        Para proteger totalmente os dados temos de utilizar o protocolo de transmissão de dados HTTPS (protocolo importante).
+        -->
+
+        <p>
+            <label for="inome">Nome:</label> 
+            <!-- 
+            label for="" associa o Nome: à caixa de input (onde digitamos o nome), desta forma o browser identifica/associa o label à caixa. 
+            Utiliza-se o id no label for 
+            -->
+
+            <input type="text" name="nome" id="inome">
+        </p>
+
+        <p>
+            <label for="iapelido">Apelido:</label> 
+            <input type="text" name="apelido" id="iapelido">
+        </p>
         <!-- input text -->
-         <p><input type="submit" value="Submeter"></p>
-         <!-- input submit -->
 
-          <!-- todo o input (todo o objeto de entrada) tem de ter um name="" (o name é mais útil para o HTML e PHP).
-           No JavaScript o id=" é mais utilizado". -->
+         <p>
+            <input type="submit" value="Submeter">
+        </p>
+         <!-- input submit - botão de Submeter -->
+
+          <!-- 
+            todo o input (todo o objeto de entrada) tem de ter um name="" (o name é mais útil para o HTML e PHP).
+            No JavaScript o id=" é mais utilizado". 
+           -->
+           <!-- 
+           Para verificarmos se o label for tem relação com a caixa de texto, clicamos em cima do label e vemos se o | aparece em intermitente na caixa de texto. Se sim, tem ligação, caso contrário, não tem. 
+           -->
     </form>
     
 </body>
