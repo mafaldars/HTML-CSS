@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="login.php" method="get">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome required" maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="20" placeholder="0 a 20" step="0.5" value="7" required>
+            <!-- o input number só aceita números, ao contrário do input text que aceita letras e números, neste caso só pretendemos a média das notas académicas -->
+             <!-- neste caso é min/max ao invés de minlenght/maxlenght -->
+              <!-- step é de quanto em quanto a nota vai mudando, será de 0.5 em 0.5 -->
+               <!-- o value 7 é a nota fixa inicial mas o placeholder desaparece com este atributo -->
+        </p>
+
+        <p>
+            <label for="iperiodo">Período Letivo</label>
+            <input type="month" name="periodo" id="iperiodo" value="2021-09">
+            <!-- o value 2021-09 é o período sugerido mas o placeholder desaparece com este atributo -->
+        </p>
+
+        <p>
+            <label for="idia">Dia do Exame</label>
+            <input type="date" name="dia" id="idia" value="2021-09-17">
+        </p>
+
+        <p>
+            <label for="ihorario">Horário do Exame</label>
+            <input type="time" name="horario" id="ihorario">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
