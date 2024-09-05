@@ -1,2 +1,1 @@
-Os dados foram enviados.
-Aprender PHP para saber o que fazer com os dados.
+Os dados foram enviados. Aprender PHP para saber como tratá-los devidamente. 

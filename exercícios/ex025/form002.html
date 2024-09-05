@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+
+    <form action="login.php" method="post" autocomplete="on">
+        <p>
+            <label for="iuser">Usuário: </label>
+            <input type="text" name="user" id="iuser" required minlength="5" maxlength="21" size="10" placeholder="nome do usuário" autocomplete="username">
+            <!-- o atributo required "obriga" o usuário a preencher os campos com este atributo, neste caso o nome. 
+             Também podemos adicionar o mínimo e o máximo de caracteres no nome. -->
+             <!-- o size define a quantidade de letras que serão mostradas, neste caso serão 10. Aceita até 21 letras mas mostrará apenas 10. -->
+              <!-- o placeholder é uma dica do que o usuário deve colocar, no exemplo colocámos: nome do usuário -->
+        </p>
+
+        <p>
+            <label for="ipass">Password: </label>
+            <input type="password" name="pass" id="ipass" required minlength="10" maxlength="20" size="10" placeholder="digite a password" autocomplete="current-password">
+            <!-- o input password oculta os caracteres quando o user digita -->
+             <!-- o atributo required "obriga" o usuário a preencher os campos com este atributo, neste caso a password. 
+              O usuário tem de digitar pelo menos 10 caracteres e no máximo 20 para a sua password. -->
+              <!-- o size define a quantidade de letras que serão mostradas, neste caso serão 10. Aceita até 20 letras mas mostrará apenas 10. -->
+              <!-- o placeholder é uma dica do que o usuário deve colocar, no exemplo colocámos: digite a password -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Apagar">
+        </p>
+    </form>
+    
+</body>
+</html>
